@@ -1,9 +1,12 @@
-# ROS for Products Workshop
+ROS for Products Workshop
+=========================
 The workshop took place...
 
-## Requirements
+Requirements
+------------
 
-* Quality
+Quality
+~~~~~~~
  * Complexity is bad. Good software architecture is the most important
  defense against incidental complexity.
  * Track and report on code quality (e.g., with QA-C++ and dashboard)
@@ -12,10 +15,12 @@ The workshop took place...
    * Start with ros_comm: characterize reliability, jitter, loss, failure
    modes.
 
-* Documentation
+Documentation
+~~~~~~~~~~~~~
  * End-to-end traceability from requirements to code
 
-* Middleware
+Middleware
+~~~~~~~~~~
  * Efficient data distribution (optimize transport and message size)
  * Diverse data types, communication patterns, rate, and latency
   * Match publisher work to subscriber capabilities (e.g., polled topics)
@@ -55,7 +60,8 @@ The workshop took place...
   * But provide an escape hatch for those who don't want their main()
   wrapped
 
-* Tools
+Tools
+~~~~~
  * Model-driven development enviornment (e.g., BRIDE)
  * Fast, easy-to-use, easy-to-customize simulation
  * GUI wrappers for command-line tools
@@ -67,7 +73,8 @@ The workshop took place...
  reproducing the same computation graph
  * Build an automatic error reporting tool (ala apport)
 
-* Packaging and installation
+Packaging and installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~
  * Improve documentation of build process/system
  * Improve visibility of maintainership and status of packages
   * New dashboard does this, with opt-in semantics for maintainers
@@ -113,17 +120,20 @@ The workshop took place...
   * Add more functionality, heading toward entire ROS system
  * Support custom packaging for commercial products built on ROS
 
-* Maintenance and support
+Maintenance and support
+~~~~~~~~~~~~~~~~~~~~~~~
  * Longevity of release (even of ROS itself)
   * Long-term bug fixing and documentation
   * Version that is stable and patched for 2-5 years
   * Make J-turtle the first LTS?
  * Stability, both API and ABI
 
-* Security
+Security
+~~~~~~~~
  * Do something about security
 
-* Legal and communication
+Legal and communication
+~~~~~~~~~~~~~~~~~~~~~~~
  * Build a new ros.org landing page that is not the wiki.  Make it more
  accessible to new users, make it clear what ROS does, where it runs, what
  the features, why to use it.
