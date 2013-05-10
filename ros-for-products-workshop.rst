@@ -7,8 +7,7 @@ Requirements
 
 Quality
 ~~~~~~~
- * Complexity is bad. Good software architecture is the most important
- defense against incidental complexity.
+ * Complexity is bad. Good software architecture is the most important defense against incidental complexity.
  * Track and report on code quality (e.g., with QA-C++ and dashboard)
   * Bosch has started this
  * Track and report on key performance characteristics and failure rates
