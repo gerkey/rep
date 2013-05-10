@@ -11,8 +11,7 @@ Quality
  * Track and report on code quality (e.g., with QA-C++ and dashboard)
   * Bosch has started this
  * Track and report on key performance characteristics and failure rates
-   * Start with ros_comm: characterize reliability, jitter, loss, failure
-   modes.
+   * Start with ros_comm: characterize reliability, jitter, loss, failure modes.
 
 Documentation
 ~~~~~~~~~~~~~
@@ -35,8 +34,7 @@ Middleware
   * Speak (or at least bridge to) existing application protocols
   * Support zero-copy no-serialization shared-memory transport
    * Start with one copy per publish
-  * Allow existing code to live alongside new code during the long
-  migration process
+  * Allow existing code to live alongside new code during the long migration process
  * Replace XMLRPC
   * Short-term, implement on embedded systems where possible
  * Admit full implementation in ANSI C
@@ -44,8 +42,7 @@ Middleware
   * To run on "bare-metal" embedded systems
  * Support (or at least allow) real-time communication
   * Need to be able to link easily and efficiently to real-time subsystem
-  * Make a reference real-time ROS architecture available. Recommend that
-  others follow it.
+  * Make a reference real-time ROS architecture available. Recommend that others follow it.
    * Is orocos-ros the starting point for this?
    * How will serialization work?
  * Improve node discovery and rediscovery
@@ -54,10 +51,8 @@ Middleware
  * Benchmark and track performance on platforms of interest
   * Bosch has started this
  * Discover and do the right thig with different physical layers
- * Support node life-cycle management.  Make programming nodes easier with
- fewer choices.  Make life-cycle status visible externally.
-  * But provide an escape hatch for those who don't want their main()
-  wrapped
+ * Support node life-cycle management.  Make programming nodes easier with fewer choices.  Make life-cycle status visible externally.
+  * But provide an escape hatch for those who don't want their main() wrapped
 
 Tools
 ~~~~~
@@ -68,8 +63,7 @@ Tools
  * Minimize duplication of functionality across tools
  * Provide deterministic, inspectable, verifiable launch (is my system up?)
  * Minimize dependencies
- * Snapshot running system to a static file, to be "reinflated" later,
- reproducing the same computation graph
+ * Snapshot running system to a static file, to be "reinflated" later, reproducing the same computation graph
  * Build an automatic error reporting tool (ala apport)
 
 Packaging and installation
@@ -88,22 +82,15 @@ Packaging and installation
  * Follow FHS (at least on Linux)
  * Manage configuration (e.g., in /etc/ros)
   * Make configuration management accessible to non-programmers
- * Manage addition of peripherals (e.g., extend udev to distinguish between
- anonymous FTDI chips).
-   * Clearpath has a potential hardware solution to this problem in the
-   form of programmable FTDI serial-USB tranceivers.
- * Run (some part of) ROS on boot.  Show its status in the right place
- (e.g., on title bar/dock).
+ * Manage addition of peripherals (e.g., extend udev to distinguish between anonymous FTDI chips).
+   * Clearpath has a potential hardware solution to this problem in the form of programmable FTDI serial-USB tranceivers.
+ * Run (some part of) ROS on boot.  Show its status in the right place (e.g., on title bar/dock).
  * Manage (or at least respond to changes in) network configuration
  * One-click launchers for various parts of ROS.
  * Out-of-the-box build environment for common embedded systems 
-  * Specific goal: package ROS for Linux/ARM, with support comparable to
-  x86, including build/test farm
-    * This has been demonstrated (by Paul Mathieu).  What's left is to
-    integrate some patches and then deploy the build farm.
-  * Merge embedded build environment with normal build environment,
-  allowing the developer to pick the target for a build and have the right
-  thing happen
+  * Specific goal: package ROS for Linux/ARM, with support comparable to x86, including build/test farm
+    * This has been demonstrated (by Paul Mathieu).  What's left is to integrate some patches and then deploy the build farm.
+  * Merge embedded build environment with normal build environment, allowing the developer to pick the target for a build and have the right thing happen
  * Support OSX
   * Provide binary (e.g., dmg) packages for OSX
    * This should be possible for much of the codebase
@@ -133,11 +120,8 @@ Security
 
 Legal and communication
 ~~~~~~~~~~~~~~~~~~~~~~~
- * Build a new ros.org landing page that is not the wiki.  Make it more
- accessible to new users, make it clear what ROS does, where it runs, what
- the features, why to use it.
- * Guarantee that code is unencumbered for given use and for
- redistribution.
+ * Build a new ros.org landing page that is not the wiki.  Make it more accessible to new users, make it clear what ROS does, where it runs, what the features, why to use it.
+ * Guarantee that code is unencumbered for given use and for redistribution.
  * Publicize commercial development and applications of ROS
   * Establish confidence in product managers, startup companies, VCs
   * Do case study / testimonial videos with commercial users
